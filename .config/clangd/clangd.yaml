@@ -1,0 +1,36 @@
+
+CompileFlags:
+  Add: [-Wall, -Wextra, -std=c++2a]
+  Remove: []
+  Compiler: clang++
+  CompilationDatabase: Ancestors
+Index:
+  Background: Build
+  StandardLibrary: Yes
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  ClangTidy: 
+    Add: 'bugprone-*'
+    Remove: modernize-use-trailing-return-type
+    FastCheckFilter: Loose
+
+Completion:
+  AllScopes: Yes
+
+InlayHints:
+   BlockEnd: No
+   Designators: No
+   Enabled: Yes
+   ParameterNames: Yes
+   DeducedTypes: No
+   TypeNameLimit: 0
+
+Hover:
+  ShowAKA: Yes
+
+SemanticTokens:
+  DisabledKinds: []
+  DisabledModifiers: []
+
