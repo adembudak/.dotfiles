@@ -1,7 +1,9 @@
 {
 	"coc.preferences.formatOnSave": true,
-	"clangd.enabled": true,
 	"diagnostic.enable": true,
 	"diagnostic.errorSign": "E",
 	"diagnostic.warningSign": "W",
+	"clangd.enabled": true,
+	"clangd.checkUpdates": true,
+	"coc.preferences.extensionUpdateCheck": "daily"
 }

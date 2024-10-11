@@ -1,4 +1,5 @@
 set nonumber
+set autoread
 
 runtime! ftplugin/man.vim
 
@@ -9,6 +10,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim'
 
 call plug#end()
+
+let g:coc_global_extensions = [
+	'coc-json', \
+	'coc-yaml', \ 
+	'coc-git', \ 
+	'coc-clangd']
 
 colorscheme dracula
 
