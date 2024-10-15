@@ -25,8 +25,14 @@ colorscheme dracula
 
 let mapleader = "t"
 command! ReloadVimrc source $MYVIMRC
-nnoremap <leader>r :ReloadVimrc <Enter>
+nnoremap <silent> <Plug>ReloadVimrc :ReloadVimrc <enter>
+nnoremap <leader>r <Plug> ReloadVimrc
 
-command! EditVimrc edit $MYVIMRC
-nnoremap <leader>e :EditVimrc <Enter>
+command! EditVimrc split $MYVIMRC
+nnoremap <silent> <Plug>EditVimrc :EditVimrc <enter>
+nnoremap <leader>e <Plug>EditVimrc
+
+nnoremap <leader>ce :CocConfig <enter>
+nnoremap <leader>cr :CocRestart <enter>
+
 
