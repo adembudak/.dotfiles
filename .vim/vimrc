@@ -1,5 +1,7 @@
 set nonumber
 set autoread
+set splitbelow
+set splitright
 
 runtime! ftplugin/man.vim
 
@@ -16,6 +18,15 @@ let g:coc_global_extensions = [
   \,'coc-yaml'
   \,'coc-git'
   \,'coc-clangd'
+  \,'coc-explorer'
 \]
 
 colorscheme dracula
+
+let mapleader = "t"
+command! ReloadVimrc source $MYVIMRC
+nnoremap <leader>r :ReloadVimrc <Enter>
+
+command! EditVimrc edit $MYVIMRC
+nnoremap <leader>e :EditVimrc <Enter>
+
