@@ -12,10 +12,10 @@ Plug 'dracula/vim'
 call plug#end()
 
 let g:coc_global_extensions = [
-	'coc-json', \
-	'coc-yaml', \ 
-	'coc-git', \ 
-	'coc-clangd']
+  \'coc-json'
+  \,'coc-yaml'
+  \,'coc-git'
+  \,'coc-clangd'
+\]
 
 colorscheme dracula
-
