@@ -1,9 +1,24 @@
 {
 	"coc.preferences.formatOnSave": true,
+	"coc.preferences.extensionUpdateCheck": "daily",
+	"suggest.enablePreselect": true,
+	"suggest.snippetIndicator": "~",
+	"suggest.snippetsSupport": true,
+	"suggest.defaultSortMethod": "alphabetical",
+	"[cpp]": {
+		"clangd.enabled": true,
+		"clangd.checkUpdates": true
+	},
 	"diagnostic.enable": true,
-	"diagnostic.errorSign": "E",
+	"pullDiagnostic.onChange": true,
+	"diagnostic.hintSign": "I",
 	"diagnostic.warningSign": "W",
-	"clangd.enabled": true,
-	"clangd.checkUpdates": true,
-	"coc.preferences.extensionUpdateCheck": "daily"
+	"diagnostic.errorSign": "E",
+	"diagnostic.displayByAle": false,
+	"diagnostic.autoRefresh": true,
+	"diagnostic.enableMessage": "never",
+	"diagnostic.virtualText": true,
+	"diagnostic.virtualTextAlign": "after",
+	"diagnostic.virtualTextFormat": "%message (%code)",
+	"coc.preferences.renameFillCurrent": true
 }
