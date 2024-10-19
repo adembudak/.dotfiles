@@ -25,9 +25,10 @@ let g:coc_global_extensions = [
 colorscheme dracula
 
 let mapleader = "t"
-command! ReloadVimrc source $MYVIMRC
-nnoremap <silent> <Plug>ReloadVimrc :ReloadVimrc <enter>
-nnoremap <leader>r <Plug> ReloadVimrc
+
+augroup vimrc
+  autocmd! BufWritePost $MYVIMRC source % | echom "Reloaded " . $MYVIMRC | redraw
+augroup end
 
 command! EditVimrc split $MYVIMRC
 nnoremap <silent> <Plug>EditVimrc :EditVimrc <enter>
