@@ -21,7 +21,7 @@ multiplier = 3
 
 [font]
 normal = { family = "DepartureMono", style = "Regular" }
-size = 11.25
+size = 8.2
 
 [selection]
 save_to_clipboard = true
