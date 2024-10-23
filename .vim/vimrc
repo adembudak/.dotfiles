@@ -35,7 +35,7 @@ nnoremap <silent> <Plug>EditVimrc :EditVimrc <enter>
 nnoremap <leader>e <Plug>EditVimrc
 
 nnoremap <leader>cr :CocRestart <enter>
-nnoremap         e  <Plug>(coc-rename)
+nnoremap         e  :call CocActionAsync('rename') <enter>
 nnoremap        fe  :CocCommand document.renameCurrentWord <enter>
 nnoremap <leader>w  :call CocActionAsync('doHover') <enter>
 nnoremap        ff  :call CocActionAsync('format') <enter>
@@ -52,3 +52,40 @@ nnoremap <leader>M  <Plug>(coc-diagnostic-next)
 
 let b:coc_trim_trailing_whitespace = 1
 let b:coc_trim_final_newlines = 1
+
+function! ShowLSPCapabilities()
+  const features = [
+           \ 'rename',
+           \ 'ioTypeEdit',
+           \ 'documentLink',
+           \ 'documentColor',
+           \ 'foldingRange',
+           \ 'formac',
+           \ 'codeAction',
+           \ 'workspaceSymbols',
+           \ 'formatRange',
+           \ 'hover',
+           \ 'signature',
+           \ 'documentSymbol',
+           \ 'documentHighlight',
+           \ 'definition',
+           \ 'declaration',
+           \ 'typeDefinition',
+           \ 'reference',
+           \ 'implementation',
+           \ 'codeLens',
+           \ 'selectionRange',
+           \ 'formatOnType',
+           \ 'callHierarchy',
+           \ 'semanticTokens',
+           \ 'semanticTokensRange',
+           \ 'linkedEditing',
+           \ 'inlayHint',
+           \ 'nnlineValue',
+           \ 'typeHierarchy'
+           \ ]
+
+  for f in features
+    echo f . ': ' . CocAction('hasProvider', f)
+  endfor
+endfunction
