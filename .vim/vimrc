@@ -37,8 +37,9 @@ nnoremap <leader>e <Plug>EditVimrc
 nnoremap <leader>cr :CocRestart <enter>
 nnoremap         e  <Plug>(coc-rename)
 nnoremap        fe  :CocCommand document.renameCurrentWord <enter>
-nnoremap <leader>w  :call CocAction('doHover') <enter>
-nnoremap        ff  :call CocAction('format') <enter>
+nnoremap <leader>w  :call CocActionAsync('doHover') <enter>
+nnoremap        ff  :call CocActionAsync('format') <enter>
+vnoremap        ff  :call CocActionAsync('formatSelected', visualmode()) <enter>
 
 inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(1) : "\<C-n>"
 inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
