@@ -3,7 +3,7 @@
 set $mod Mod1
 
 # Font for window titles
-font pango:monospace 8
+font pango:monospace 9
 
 # resize tiles with mouse
 floating_modifier $mod
@@ -12,13 +12,11 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-# start a terminal
 bindsym $mod+Return exec /home/adem/.cargo/bin/alacritty
 
-# kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec --no-startup-id /usr/local/bin/dmenu_run
+bindsym $mod+d exec /usr/local/bin/rofi -show run
 
 # change focus
 bindsym $mod+Left focus left
