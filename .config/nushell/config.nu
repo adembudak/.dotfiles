@@ -1,12 +1,5 @@
 # version = "0.84.0"
 
-$env.TERM = 'xterm'
-$env.CMAKE_EXPORT_COMPILE_COMMANDS = 1
-# $env.config CMAKE_CONFIG_TYPE = 'Debug'
-$env.CMAKE_GENERATOR = 'Ninja'
-$env.CMAKE_INSTALL_PREFIX = '/home/mythings'
-$env.CMAKE_NO_VERBOSE = 1
-
 # https://www.nushell.sh/book/coloring_and_theming.html
 # https://github.com/nushell/nu_scripts/tree/main/themes
 let dark_theme = {
