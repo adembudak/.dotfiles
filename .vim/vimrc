@@ -59,6 +59,9 @@ nnoremap <leader>M  <Plug>(coc-diagnostic-next)
 ":h coc-code-actions
 nmap ft <Plug>(coc-fix-current)
 
+set updatetime=500
+autocmd CursorHold *.{c,cpp,d,rust,zig} if CocHasProvider('hover') | silent call CocActionAsync('doHover') | endif
+
 function! ShowLSPCapabilities()
   const features = [
            \ 'rename',
