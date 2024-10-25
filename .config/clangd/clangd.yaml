@@ -1,6 +1,6 @@
 
 CompileFlags:
-  Add: [-Wall, -Wextra, -std=c++2a]
+  Add: [-Wall, -Wextra, -std=c++2b]
   Remove: []
   Compiler: clang++
   CompilationDatabase: Ancestors
@@ -22,7 +22,7 @@ Completion:
 InlayHints:
    BlockEnd: No
    Designators: No
-   Enabled: Yes
+   Enabled: No
    ParameterNames: Yes
    DeducedTypes: No
    TypeNameLimit: 0
