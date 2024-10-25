@@ -28,7 +28,11 @@ colorscheme dracula
 let mapleader = "t"
 
 augroup vimrc
-  autocmd! BufWritePost $MYVIMRC source % | echom "Reloaded " . $MYVIMRC | redraw
+  autocmd! BufWritePost $MYVIMRC :source % | redraw!
+augroup end
+
+augroup coc
+  autocmd! BufWritePost $MYVIMDIR/coc-settings.json :CocRestart
 augroup end
 
 nnoremap <leader>cr :CocRestart <enter>
