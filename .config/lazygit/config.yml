@@ -1,0 +1,6 @@
+gui:
+  showRandomTip: false
+
+update:
+  method: prompt
+  days: 1
