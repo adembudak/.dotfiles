@@ -1,6 +1,6 @@
 {
-	"coc.preferences.formatOnSave": true,
 	"coc.preferences.extensionUpdateCheck": "daily",
+	"coc.preferences.formatOnSave": true,
 	"suggest.enablePreselect": true,
 	"suggest.snippetIndicator": "~",
 	"suggest.snippetsSupport": true,
@@ -20,5 +20,6 @@
 	"diagnostic.virtualText": true,
 	"diagnostic.virtualTextAlign": "after",
 	"diagnostic.virtualTextFormat": "%message (%code)",
-	"coc.preferences.renameFillCurrent": true
+	"coc.preferences.renameFillCurrent": false,
+	"inlayHint.enable": false
 }
