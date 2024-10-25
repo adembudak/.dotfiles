@@ -1,6 +1,8 @@
 # version = "0.84.0"
 
 $env.TERM = 'xterm'
+$env.XDG_CONFIG_HOME = '/home/adem/.config'
+
 $env.CMAKE_EXPORT_COMPILE_COMMANDS = 1
 $env.CMAKE_GENERATOR = 'Ninja'
 $env.CMAKE_INSTALL_PREFIX = '/home/adem/.installed'
