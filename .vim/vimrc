@@ -4,6 +4,7 @@ set splitbelow
 set splitright
 set signcolumn=yes
 set encoding=utf-8
+set termguicolors
 
 runtime! ftplugin/man.vim
 
