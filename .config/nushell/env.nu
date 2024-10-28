@@ -1,6 +1,7 @@
 # version = "0.84.0"
 
 $env.TERM = 'xterm'
+$env.EDITOR = '/usr/local/bin/vim'
 $env.XDG_CONFIG_HOME = '/home/adem/.config'
 
 $env.CMAKE_EXPORT_COMPILE_COMMANDS = 1
