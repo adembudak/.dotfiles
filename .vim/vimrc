@@ -41,6 +41,7 @@ nnoremap <leader>cr :CocRestart <enter>
 nnoremap         e  :call CocActionAsync('rename') <enter>
 nnoremap        fe  :CocCommand document.renameCurrentWord <enter>
 
+":h coc-hover
 nnoremap <leader>w  :call CocActionAsync('doHover') <enter>
 
 ":h coc-format
@@ -61,6 +62,12 @@ nnoremap <leader>e  <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>E  <Plug>(coc-diagnostic-prev-error)
 nnoremap <leader>M  <Plug>(coc-diagnostic-next)
 
+":h coc-locations
+nnoremap <silent> <leader>g :call CocAction('jumpDefinition') <enter>
+nnoremap <silent> <leader>s :call CocAction('jumpDeclaration') <enter>
+nnoremap <silent> <leader>h :call CocAction('jumpImplementation') <enter>
+map <leader>wa <Plug>(coc-references-used)
+
 ":h coc-code-actions
 nmap ft <Plug>(coc-fix-current)
 
@@ -68,36 +75,35 @@ set updatetime=500
 autocmd CursorHold *.{c,cpp,d,rust,zig} if CocHasProvider('hover') | silent call CocActionAsync('doHover') | endif
 
 function! ShowLSPCapabilities()
-  const features = [
-           \ 'rename',
-           \ 'ioTypeEdit',
-           \ 'documentLink',
-           \ 'documentColor',
-           \ 'foldingRange',
-           \ 'formac',
-           \ 'codeAction',
-           \ 'workspaceSymbols',
-           \ 'formatRange',
-           \ 'hover',
-           \ 'signature',
-           \ 'documentSymbol',
-           \ 'documentHighlight',
-           \ 'definition',
-           \ 'declaration',
-           \ 'typeDefinition',
-           \ 'reference',
-           \ 'implementation',
-           \ 'codeLens',
-           \ 'selectionRange',
-           \ 'formatOnType',
-           \ 'callHierarchy',
-           \ 'semanticTokens',
-           \ 'semanticTokensRange',
-           \ 'linkedEditing',
-           \ 'inlayHint',
-           \ 'nnlineValue',
-           \ 'typeHierarchy'
-           \ ]
+   const features = [
+       'callHierarchy',
+       'codeAction',
+       'codeLens',
+       'declaration',
+       'definition',
+       'documentColor',
+       'documentHighlight',
+       'documentLink',
+       'documentSymbol',
+       'formatOnType',
+       'formatRange',
+       'foldingRange',
+       'formac',
+       'hover',
+       'implementation',
+       'inlayHint',
+       'ioTypeEdit',
+       'linkedEditing',
+       'nnlineValue',
+       'reference',
+       'rename',
+       'selectionRange',
+       'semanticTokens',
+       'semanticTokensRange',
+       'signature',
+       'typeDefinition',
+       'typeHierarchy',
+       'workspaceSymbols'];
 
   for f in features
     echo f . ': ' . CocAction('hasProvider', f)
