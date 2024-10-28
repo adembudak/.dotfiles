@@ -71,8 +71,14 @@ map <leader>wa <Plug>(coc-references-used)
 ":h coc-code-actions
 nmap ft <Plug>(coc-fix-current)
 
-set updatetime=500
-autocmd CursorHold *.{c,cpp,d,rust,zig} if CocHasProvider('hover') | silent call CocActionAsync('doHover') | endif
+":h coc-signature
+
+":h coc-document-highlight
+nnoremap <silent> <leader>l :call CocActionAsync('highlight') <enter>
+
+"set updatetime=500
+"set mouse=n
+"autocmd CursorHold *.{c,cpp,d,rust,zig} if &mouse == 'n' && CocHasProvider('hover') | silent call CocActionAsync('doHover') | endif
 
 function! ShowLSPCapabilities()
    const features = [
