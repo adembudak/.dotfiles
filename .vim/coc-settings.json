@@ -1,6 +1,9 @@
 {
+	"signature.enable": true,
 	"coc.preferences.extensionUpdateCheck": "daily",
+	"coc.preferences.silentAutoupdate": true,
 	"coc.preferences.formatOnSave": true,
+	"coc.preferences.jumpCommand": "drop",
 	"suggest.floatConfig": {
 		"border": true,
 		"rounded": true,
