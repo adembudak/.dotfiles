@@ -53,6 +53,8 @@ let b:coc_trim_trailing_whitespace = 1
 let b:coc_trim_final_newlines = 1
 
 ":h coc-completion
+" placeholders, like func. param names, are dropped by C-j and C-k
+" see h: coc-snippets
 inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(1) : "\<C-n>"
 inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
 inoremap <silent><expr> <C-e> coc#pum#visible() ? coc#pum#cancel() : "\<C-e>"
@@ -76,6 +78,13 @@ nmap ft <Plug>(coc-fix-current)
 
 ":h coc-document-highlight
 nnoremap <silent> <leader>l :call CocActionAsync('highlight') <enter>
+
+":h coc-selection-range
+xmap <silent> <leader>sb <Plug>(coc-range-select)
+
+":h coc-status
+set statusline^=%{coc#status()}
+autocmd User CocStatusChange redrawstatus
 
 "set updatetime=500
 "set mouse=n
