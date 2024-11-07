@@ -12,6 +12,7 @@ $env.CMAKE_NO_VERBOSE = 1
 
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/adem/.cargo/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/adem/.installed/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/home/adem/.local/bin')
 
 def create_left_prompt [] {
     mut home = ""
