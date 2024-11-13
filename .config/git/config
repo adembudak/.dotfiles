@@ -1,4 +1,5 @@
+[init]
+	defaultBranch = "main"
 [user]
         name = "Adem Budak"
         email = "adembudak@outlook.com"
-
