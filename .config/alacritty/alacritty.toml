@@ -8,7 +8,7 @@ dimensions = { columns = 0, lines = 0 }
 position = "None"
 padding = { x = 10, y = 5 }
 dynamic_padding = true
-decorations = "None"
+decorations = "Full"
 opacity = 1.0
 blur = false
 title = ""
@@ -20,7 +20,9 @@ history = 100000
 multiplier = 3
 
 [font]
-normal = { family = "Dejavu Sans Mono", style = "Regular" }
+normal = { family = "Cousine for Powerline", style = "Regular" }
+bold = { family = "Fira Mono for Powerline", style = "Bold" }
+italic = { family = "Meslo LG M DZ for Powerline", style = "Italic" }
 size = 11.2
 
 [selection]
