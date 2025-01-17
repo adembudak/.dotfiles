@@ -13,6 +13,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim'
+Plug 'vim-scripts/restore_view.vim'
 
 call plug#end()
 
@@ -126,3 +127,5 @@ function! ShowLSPCapabilities()
   endfor
 endfunction
 
+nmap <space>e <Cmd>CocCommand explorer<CR>
+"autocmd CursorHold * call CocActionAsync('highlight')
