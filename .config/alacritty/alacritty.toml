@@ -1,8 +1,10 @@
-
+[terminal]
 shell = "/usr/local/bin/nu"
-working_directory = "None"
+
+[general]
 live_config_reload = true
 ipc_socket = false
+
 [window]
 dimensions = { columns = 0, lines = 0 }
 position = "None"
