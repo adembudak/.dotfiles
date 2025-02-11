@@ -16,6 +16,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim'
 Plug 'vim-scripts/restore_view.vim'
 Plug 'vim-scripts/DeleteTrailingWhitespace'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
