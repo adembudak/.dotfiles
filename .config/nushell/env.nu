@@ -5,7 +5,7 @@ $env.EDITOR = '/usr/local/bin/vim'
 $env.XDG_CONFIG_HOME = '/home/adem/.config'
 
 $env.CMAKE_EXPORT_COMPILE_COMMANDS = 1
-$env.CMAKE_GENERATOR = 'Ninja'
+$env.CMAKE_GENERATOR = 'Ninja Multi-Config'
 $env.CMAKE_INSTALL_PREFIX = '/home/adem/.installed'
 $env.CMAKE_NO_VERBOSE = 1
 # $env.config CMAKE_CONFIG_TYPE = 'Debug'
