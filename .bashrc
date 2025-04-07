@@ -25,6 +25,7 @@ export NVM_DIR=/home/adem/.config/nvm
 [ -s "$NVM_DIR/bash_completion" ] && source  "$NVM_DIR/bash_completion"
 
 [ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+[ -s "$HOME/.xmake/profile" ] && source "/home/adem/.xmake/profile"
 
 export VCPKG_ROOT=/home/adem/to.be.build/vcpkg
 export VCPKG_FORCE_SYSTEM_BINARIES=1
