@@ -1,7 +1,8 @@
 {
 	"signature.enable": true,
-	"coc.preferences.extensionUpdateCheck": "daily",
-	"coc.preferences.silentAutoupdate": true,
+	"extensions.updateCheck": "daily",
+	"extensions.silentAutoupdate": true,
+	"extensions.updateUIInTab": false,
 	"coc.preferences.formatOnSave": true,
 	"coc.preferences.jumpCommand": "drop",
 	"suggest.floatConfig": {
