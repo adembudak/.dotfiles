@@ -1,10 +1,10 @@
-set bell-style none
-set completion-ignore-case On
-set editing-mode vi
-set print-completions-horizontally On
-set show-mode-in-prompt On
-set vi-cmd-mode-string "((cmd))"
-set vi-ins-mode-string "((ins))"
+bind "set bell-style none"
+bind "set completion-ignore-case 1"
+bind "set editing-mode vi"
+bind "set print-completions-horizontally 1"
+bind "set show-mode-in-prompt 1"
+bind "set vi-cmd-mode-string \": \""
+bind "set vi-ins-mode-string \"> \""
 
 export XDG_CONFIG_HOME=/home/adem/.config
 export PS1="$ "
