@@ -4,10 +4,10 @@ bind "set editing-mode vi"
 bind "set print-completions-horizontally 1"
 bind "set show-mode-in-prompt 1"
 bind "set vi-cmd-mode-string \": \""
-bind "set vi-ins-mode-string \"> \""
+bind "set vi-ins-mode-string \"[>\""
 
 export XDG_CONFIG_HOME=/home/adem/.config
-export PS1="$ "
+export PS1=" "
 
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 export CMAKE_GENERATOR='Ninja Multi-Config'
@@ -25,7 +25,7 @@ export NVM_DIR=/home/adem/.config/nvm
 [ -s "$NVM_DIR/bash_completion" ] && source  "$NVM_DIR/bash_completion"
 
 [ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
-[ -s "$HOME/.xmake/profile" ] && source "/home/adem/.xmake/profile"
+[ -s "$HOME/.xmake/profile" ] && source "$HOME/.xmake/profile"
 
 export VCPKG_ROOT=/home/adem/to.be.build/vcpkg
 export VCPKG_FORCE_SYSTEM_BINARIES=1
