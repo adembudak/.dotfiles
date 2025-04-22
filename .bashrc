@@ -19,6 +19,7 @@ export PATH=$PATH:/home/adem/.cargo/bin
 export PATH=$PATH:/home/adem/.installed/bin
 export PATH=$PATH:/home/adem/.local/bin
 export PATH=$PATH:/home/adem/to.be.build/vcpkg
+export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
 
 export NVM_DIR=/home/adem/.config/nvm
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
