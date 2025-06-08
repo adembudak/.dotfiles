@@ -7,6 +7,7 @@ bind "set vi-cmd-mode-string \": \""
 bind "set vi-ins-mode-string \"[>\""
 
 export XDG_CONFIG_HOME=/home/adem/.config
+export EDITOR=vim
 export PS1=" "
 
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
@@ -19,7 +20,27 @@ export PATH=$PATH:/home/adem/.cargo/bin
 export PATH=$PATH:/home/adem/.installed/bin
 export PATH=$PATH:/home/adem/.local/bin
 export PATH=$PATH:/home/adem/to.be.build/vcpkg
-export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
+export PATH=$PATH:/root/.local/bin
+
+export JAVA_HOME=/opt/java
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:/opt/gradle/bin
+
+export PATH=$PATH:/home/adem/to.be.build/android-studio/bin
+
+export ANDROID_HOME=/home/adem/Android/Sdk
+export ANDROID_NDK=$ANDROID_HOME/ndk/25.2.9519653
+export ANDROID_NDK_HOME=$ANDROID_NDK
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/19.0/bin
+export REPO_OS_OVERRIDE="linux"
+
+#export PATH=$PATH:$ANDROID_HOME/tools
+#export PATH=$PATH:$ANDROID_HOME/tools/bin:
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
+export LD_RUN_PATH=$LD_RUN_PATH:/opt/gcc-latest/lib64
 
 export NVM_DIR=/home/adem/.config/nvm
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
