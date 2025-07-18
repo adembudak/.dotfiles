@@ -20,7 +20,7 @@ export CMAKE_INSTALL_PARALLEL_LEVEL=4
 export PATH=$PATH:/home/adem/.cargo/bin
 export PATH=$PATH:/home/adem/.installed/bin
 export PATH=$PATH:/home/adem/.local/bin
-export PATH=$PATH:/home/adem/to.be.build/vcpkg
+export PATH=$PATH:/home/adem/to.be.build/vcpkg-2025.06.13
 export PATH=$PATH:/root/.local/bin
 
 export JAVA_HOME=/opt/java
@@ -52,8 +52,8 @@ export NVM_DIR=/home/adem/.config/nvm
 
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/adem/.installed/lib/pkgconfig
 
-export VCPKG_ROOT=/home/adem/to.be.build/vcpkg
-export VCPKG_FORCE_SYSTEM_BINARIES=1
+export VCPKG_ROOT=/home/adem/to.be.build/vcpkg-2025.06.13
+export VCPKG_FORCE_SYSTEM_BINARIES=0
 export VCPKG_DOWNLOADS=/home/adem/to.be.build/downloads
 [ -s "$VCPKG_ROOT/scripts/vcpkg_completion.bash" ] && source "$VCPKG_ROOT/scripts/vcpkg_completion.bash"
 
@@ -64,6 +64,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+[ -s "$HOME/git-completion.bash" ] && source "$HOME/git-completion.bash"
 
 alias ..='cd ..'
 alias ls='ls --group-directories-first --file-type'
