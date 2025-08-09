@@ -10,6 +10,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
 export PS1=" "
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export HOMEBREW_NO_ENV_HINTS=1
+
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 #export CMAKE_GENERATOR='Ninja Multi-Config'
 export CMAKE_INSTALL_PREFIX='$HOME/.installed'
