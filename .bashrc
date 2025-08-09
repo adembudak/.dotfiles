@@ -6,30 +6,31 @@ bind "set show-mode-in-prompt 1"
 bind "set vi-cmd-mode-string \": \""
 bind "set vi-ins-mode-string \"[>\""
 
-export XDG_CONFIG_HOME=/home/adem/.config
+export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
 export PS1=" "
 
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
-export CMAKE_GENERATOR='Ninja Multi-Config'
-export CMAKE_INSTALL_PREFIX='/home/adem/.installed'
+#export CMAKE_GENERATOR='Ninja Multi-Config'
+export CMAKE_INSTALL_PREFIX='$HOME/.installed'
 export CMAKE_NO_VERBOSE=1
 export CMAKE_INSTALL_PARALLEL_LEVEL=4
 # export CMAKE_CONFIG_TYPE='Debug'
 
-export PATH=$PATH:/home/adem/.cargo/bin
-export PATH=$PATH:/home/adem/.installed/bin
-export PATH=$PATH:/home/adem/.local/bin
-export PATH=$PATH:/home/adem/to.be.build/vcpkg-2025.06.13
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.installed/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/to.be.build/vcpkg-2025.06.13
 export PATH=$PATH:/root/.local/bin
+export PATH="/opt/homebrew/opt/uutils-coreutils/libexec/uubin:$PATH"
 
 export JAVA_HOME=/opt/java
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/opt/gradle/bin
 
-export PATH=$PATH:/home/adem/to.be.build/android-studio/bin
+export PATH=$PATH:$HOME/to.be.build/android-studio/bin
 
-export ANDROID_HOME=/home/adem/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_NDK=$ANDROID_HOME/ndk/25.2.9519653
 export ANDROID_NDK_HOME=$ANDROID_NDK
 export ANDROID_SDK_ROOT=$ANDROID_HOME
@@ -43,18 +44,18 @@ export REPO_OS_OVERRIDE="linux"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
 export LD_RUN_PATH=$LD_RUN_PATH:/opt/gcc-latest/lib64
 
-export NVM_DIR=/home/adem/.config/nvm
+export NVM_DIR=$HOME/.config/nvm
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && source  "$NVM_DIR/bash_completion"
 
 [ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 [ -s "$HOME/.xmake/profile" ] && source "$HOME/.xmake/profile"
 
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/adem/.installed/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/.installed/lib/pkgconfig
 
-export VCPKG_ROOT=/home/adem/to.be.build/vcpkg-2025.06.13
+export VCPKG_ROOT=$HOME/to.be.build/vcpkg-2025.06.13
 export VCPKG_FORCE_SYSTEM_BINARIES=0
-export VCPKG_DOWNLOADS=/home/adem/to.be.build/downloads
+export VCPKG_DOWNLOADS=$HOME/to.be.build/downloads
 [ -s "$VCPKG_ROOT/scripts/vcpkg_completion.bash" ] && source "$VCPKG_ROOT/scripts/vcpkg_completion.bash"
 
 if ! shopt -oq posix; then
@@ -68,4 +69,4 @@ fi
 [ -s "$HOME/git-completion.bash" ] && source "$HOME/git-completion.bash"
 
 alias ..='cd ..'
-alias ls='ls --group-directories-first --file-type'
+alias ls='ls --file-type'
