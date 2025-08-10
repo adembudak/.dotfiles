@@ -56,9 +56,9 @@ export NVM_DIR=$HOME/.config/nvm
 
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/.installed/lib/pkgconfig
 
-export VCPKG_ROOT=$HOME/to.be.build/vcpkg-2025.06.13
+export VCPKG_ROOT=$HOME/vcpkg
 export VCPKG_FORCE_SYSTEM_BINARIES=0
-export VCPKG_DOWNLOADS=$HOME/to.be.build/downloads
+export PATH=$PATH:$VCPKG_ROOT
 [ -s "$VCPKG_ROOT/scripts/vcpkg_completion.bash" ] && source "$VCPKG_ROOT/scripts/vcpkg_completion.bash"
 
 if ! shopt -oq posix; then
