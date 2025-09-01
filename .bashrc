@@ -6,6 +6,9 @@ bind "set show-mode-in-prompt 1"
 bind "set vi-cmd-mode-string \": \""
 bind "set vi-ins-mode-string \"[>\""
 
+export HISTCONTROL=erasedups
+export HISTIGNORE="bg:cd:cd *:clear:exit:fg:head:less:ls:more:pwd:tail:tree"
+
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
 export PS1=" "
@@ -15,7 +18,7 @@ export HOMEBREW_NO_ENV_HINTS=1
 
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 #export CMAKE_GENERATOR='Ninja Multi-Config'
-export CMAKE_INSTALL_PREFIX='$HOME/.installed'
+export CMAKE_INSTALL_PREFIX=$HOME/.installed
 export CMAKE_NO_VERBOSE=1
 export CMAKE_INSTALL_PARALLEL_LEVEL=4
 # export CMAKE_CONFIG_TYPE='Debug'
